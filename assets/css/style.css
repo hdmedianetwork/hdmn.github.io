@@ -576,7 +576,7 @@ img {
 }
 
 .bg-overlay::after {
-    opacity: 0.95;
+    opacity: 0.45;
     z-index: -1;
 }
 
