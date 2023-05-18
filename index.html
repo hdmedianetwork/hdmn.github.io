@@ -24,6 +24,58 @@
 
     <!-- Responsive css -->
     <link rel="stylesheet" href="assets/css/responsive.css">
+<style>
+
+    .gallery{
+        overflow: hidden;
+  background-color: #222;
+  background-image: 
+    linear-gradient(to right, rgba(255,255,255,.025) 10%, transparent 0),
+    linear-gradient(#222, #000);
+  background-size: .75em 100%, 100% 100%;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+}
+    
+    .wrapper {
+  position: relative;
+  flex-grow: 5;
+  margin: auto;
+  max-width: 50%;
+  max-height: 50%;
+  
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 2vmin;
+  grid-column-gap: 8vmin;
+  justify-items: center;
+  align-items: center;
+   
+}
+
+.hd{
+  z-index: 1;
+  grid-column: span 2;
+  max-width: 100%;
+  margin-bottom: -52%;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  transform: scale(1);
+  transition: all .25s;
+  
+  &:nth-child(7n + 1) {
+    grid-column: 2 / span 2;
+  }
+  
+  &:hover {
+    z-index: 2;
+    transform: scale(2);
+  }
+  
+}
+</style>
+
 
 </head>
 
@@ -192,26 +244,33 @@
                     <div class="col-12">
                         <!-- Brand Partner Wrapper -->
                         <ul class="brand-partner-wrapper list-inline text-center">
-				 <!-- Single Partner -->
+
+                            <!-- Single Partner -->
                             <li class="single-partner list-inline-item p-lg-3">
-                                <img src="assets/img/brand/srgroupofeduction.jpg" width="177" height="178" alt="">
+                                <img src="assets/img/brand/Poornima_University.png"  width="120" height="120" alt="">
+                            </li>
+
+
+                            <!-- Single Partner -->
+                            <li class="single-partner list-inline-item p-lg-3">
+                                <img src="assets/img/brand/Falcons.jpg"  width="120" height="120" alt="">
+                            </li>
+
+				 <!-- Single Partner -->
+                 
+                            <li class="single-partner list-inline-item p-lg-3">
+                                <img src="assets/img/brand/srgroupofeduction.jpg" width="120" height="120" alt="">
                             </li>
                             <!-- Single Partner -->
                             <li class="single-partner list-inline-item p-lg-3">
-                                <img src="assets/img/brand/ss.jpg" alt="">
+                                <img src="assets/img/brand/ss.jpg"  width="120" height="120"alt="">
                             </li>
-                            <!-- Single Partner -->
-                            <li class="single-partner list-inline-item p-lg-3">
-                                <img src="assets/img/brand/Poornima_University.png" alt="">
-                            </li>
-				 <!-- Single Partner -->
-                            <li class="single-partner list-inline-item p-lg-3">
-                                <img src="assets/img/brand/Falcons.jpg"  width="177" height="178"  alt="">
-                            </li>
+                            
+				 
                            <!-- Single Partner -->
-                            <li class="single-partner list-inline-item p-lg-3">
-                                <img src="assets/img/brand/codal.jpg"  width="177" height="178"  alt="">
-                            </li>
+                           <li class="single-partner list-inline-item p-lg-3">
+                            <img src="assets/img/brand/codal.jpg"  width="120" height="120"alt="">
+                        </li>
                           
                         </ul>
                     </div>
@@ -845,11 +904,35 @@
                             </div>
                         </div>
                         <!-- Single Review -->
+        
                        
                         
                  
         </section>
         <!-- ***** Review Area End ***** -->
+         
+ <br>
+
+ <div class="gallery">
+    
+        <h2 class="text-white">Looking for the best digital agency &amp; marketing solution?</h2>
+        
+   
+   
+ <div class="wrapper divstyle">
+    <img class="hd" src="assets/img/hdm logo.png" alt="">
+    <img class="hd" src="assets/img/brand/Poornima_University.png" alt="">
+    <img class="hd"  src="assets/img/brand/Falcons.jpg" alt="">
+    <img class="hd" src="assets/img/1..png" alt="">
+    <img class="hd" src="assets/img/anshuman.png" alt="">
+    <img class="hd" src="assets/img/arnav.png" alt="">
+    <img class="hd" src="assets/img/pratik.png" alt="">
+    <img class="hd" src="assets/img/dharam.png" alt="">
+    <img class="hd" src="assets/img/amit.png" alt="">
+    <img class="hd" src="assets/img/harendra.png" alt="">
+    
+
+   </div>  </div>
         <!--====== Contact Area Start ======-->
         <section id="contact" class="contact-area ptb_100">
             <div class="container">
