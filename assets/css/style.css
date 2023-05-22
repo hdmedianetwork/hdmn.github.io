@@ -1525,6 +1525,9 @@ header {
     top: 210px;
     left: 25px;
     z-index: 1;
+    height: 113px;
+    width: 480px;
+
 }
 
 .profile-inner {
